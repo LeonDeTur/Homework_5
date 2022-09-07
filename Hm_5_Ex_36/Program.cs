@@ -11,6 +11,7 @@ PrintArray (arrayFromFour);
 int output = CountSumOddI(arrayFromFour);
 
 Console.WriteLine($"Сумма элементов на нечётных позициях: {output}");
+
 // Методы
 
 int[] NewRandomArray(int num)
@@ -29,7 +30,7 @@ int[] NewRandomArray(int num)
 int CountSumOddI (int[] array)
 {
     int result = 0;
-    for (int i = 1; i < array.Length; i += 2)
+    for (int i = 0; i < array.Length; i += 2)
     {
         result += array[i];
     }
